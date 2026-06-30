@@ -1,0 +1,24 @@
+
+OOP Week 5 Lab Documentation - Encapsulation Q&A
+
+2.1. Why are the variables declared as private?
+
+Variables are declared private to enforce data hiding. This prevents 
+external classes or unauthorized users from directly accessing or modifying 
+the internal state of an object, protecting its integrity.
+
+2.2. What happens if the variables are declared public?
+
+If variables are public, any external class can bypass the safety controls
+and change them directly (e.g., setting a student's CGPA to -5.0 or 99.0). 
+This violates the principle of encapsulation and makes the application 
+vulnerable to data corruption and bugs.
+
+2.3. Why do we use getters and setters?
+
+Getters and setters act as controlled access points (mediators) for private 
+variables. 
+- Getters grant safe, read-only access to the data.
+- Setters control how data is changed, allowing us to include validation 
+  logic (like ensuring a CGPA stays between 0.0 and 4.0) before updating the 
+  internal variable.
